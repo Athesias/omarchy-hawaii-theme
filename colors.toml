@@ -1,0 +1,34 @@
+# Hawaii - a tropical sunset palette.
+# Deep volcanic-twilight purple ground, warm sun-on-the-water orange accent.
+
+mode = "dark"
+
+accent = "#ff8c42"
+selection = "#4d2b5c"
+muted = "#6b4a7a"
+
+background = "#2a1633"
+dark_background = "#1f1027"
+darker_background = "#170b1d"
+lighter_background = "#3d2249"
+
+foreground = "#ffe8d6"
+dark_foreground = "#9b7fa8"
+light_foreground = "#f5d5bd"
+bright_foreground = "#fff5ec"
+
+red = "#ff5c5c"
+yellow = "#ffc857"
+orange = "#ff8c42"
+green = "#5ecfa0"
+cyan = "#4fd6d2"
+blue = "#5eb3e4"
+magenta = "#d67ce8"
+brown = "#b5764f"
+
+bright_red = "#ff7b7b"
+bright_yellow = "#ffd97d"
+bright_green = "#7fe5bb"
+bright_cyan = "#6fe9e5"
+bright_blue = "#85c8f5"
+bright_magenta = "#e79bf5"

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.00" stop-color="#160b1d"/>
+      <stop offset="0.20" stop-color="#281632"/>
+      <stop offset="0.40" stop-color="#46264f"/>
+      <stop offset="0.56" stop-color="#6d3363"/>
+      <stop offset="0.70" stop-color="#a5426a"/>
+      <stop offset="0.82" stop-color="#d55f4f"/>
+      <stop offset="0.92" stop-color="#f8843f"/>
+      <stop offset="1.00" stop-color="#ffc45a"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.00" stop-color="#e88a4c"/>
+      <stop offset="0.14" stop-color="#bd565f"/>
+      <stop offset="0.38" stop-color="#743865"/>
+      <stop offset="0.68" stop-color="#3d1f47"/>
+      <stop offset="1.00" stop-color="#1a0d22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.00" stop-color="#ffd97d" stop-opacity="0.80"/>
+      <stop offset="0.35" stop-color="#ff9a4a" stop-opacity="0.34"/>
+      <stop offset="0.72" stop-color="#e8564f" stop-opacity="0.10"/>
+      <stop offset="1.00" stop-color="#e8564f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sunface" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4cc"/>
+      <stop offset="1" stop-color="#ffae44"/>
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity="0.50"/>
+      <stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="colfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.32" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.68" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1.00" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="colmask">
+      <rect x="620" y="900" width="560" height="540" fill="url(#colfade)"/>
+    </mask>
+    <!-- silhouettes: near-black plum, warmer where the sun rakes them -->
+    <linearGradient id="palmink" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0.00" stop-color="#150a1c"/>
+      <stop offset="1.00" stop-color="#2d1330"/>
+    </linearGradient>
+    <clipPath id="skyclip"><rect x="0" y="0" width="2560" height="900"/></clipPath>
+    <clipPath id="seaclip"><rect x="0" y="900" width="2560" height="540"/></clipPath>
+
+    <!-- one palm: trunk base at (0,0), crown up and to the left -->
+    <g id="palm">
+      <path d="M -20 0 C -12 -170, -26 -330, -52 -498 L -24 -506 C -6 -336, 10 -172, 24 0 Z" fill="url(#palmink)"/>
+      <g transform="translate(-40,-504)" fill="url(#palmink)">
+        <g transform="rotate(198)">  <path d="M0 0 C 70 -46, 168 -40, 250 16 C 166 -8, 70 4, 0 18 Z"/></g>
+        <g transform="rotate(232)">  <path d="M0 0 C 66 -50, 160 -48, 238 8  C 158 -14, 66 -2, 0 16 Z"/></g>
+        <g transform="rotate(266)">  <path d="M0 0 C 60 -54, 150 -56, 224 -6 C 148 -24, 60 -8, 0 14 Z"/></g>
+        <g transform="rotate(300)">  <path d="M0 0 C 66 -50, 162 -46, 242 6  C 160 -14, 66 -2, 0 16 Z"/></g>
+        <g transform="rotate(332)">  <path d="M0 0 C 72 -42, 174 -32, 258 24 C 172 -2, 72 6, 0 18 Z"/></g>
+        <g transform="rotate(8)">    <path d="M0 0 C 76 -34, 180 -18, 262 44 C 176 12, 76 12, 0 20 Z"/></g>
+        <g transform="rotate(38)">   <path d="M0 0 C 68 -26, 158 -6, 228 58 C 152 22, 68 14, 0 18 Z"/></g>
+        <g transform="rotate(160)">  <path d="M0 0 C 62 -30, 146 -18, 214 36 C 142 8, 62 8, 0 16 Z"/></g>
+        <circle cx="6"  cy="18" r="13"/>
+        <circle cx="-16" cy="26" r="11"/>
+        <circle cx="24" cy="32" r="10"/>
+      </g>
+    </g>
+  </defs>
+
+  <rect width="2560" height="900" fill="url(#sky)"/>
+  <!-- sun, low and left of centre -->
+  <g clip-path="url(#skyclip)">
+    <ellipse cx="900" cy="900" rx="720" ry="500" fill="url(#glow)"/>
+    <circle cx="900" cy="900" r="150" fill="url(#sunface)" opacity="0.95"/>
+  </g>
+
+  <!-- cirrus -->
+  <g opacity="0.26">
+    <ellipse cx="1700" cy="470" rx="440" ry="14" fill="#a5426a"/>
+    <ellipse cx="700"  cy="560" rx="520" ry="13" fill="#c4525f"/>
+    <ellipse cx="2050" cy="640" rx="400" ry="12" fill="#d06a55"/>
+    <ellipse cx="1150" cy="700" rx="560" ry="11" fill="#e07a4c"/>
+  </g>
+
+  <!-- distant island on the horizon -->
+  <g fill="#2a1330" opacity="0.85">
+    <path d="M1560 900 C 1620 878, 1668 846, 1726 838 C 1790 830, 1836 862, 1904 878
+             C 1948 888, 1986 894, 2020 900 Z"/>
+    <path d="M300 900 C 348 890, 386 872, 438 868 C 486 864, 520 882, 566 900 Z"/>
+  </g>
+
+  <!-- ocean -->
+  <rect x="0" y="900" width="2560" height="540" fill="url(#sea)"/>
+  <g clip-path="url(#seaclip)">
+    <path d="M810 900 L990 900 L1120 1440 L680 1440 Z" fill="url(#shimmer)" mask="url(#colmask)"/>
+    <g stroke="#ffd08a" fill="none" stroke-linecap="round">
+      <path d="M760 954  h280" stroke-width="3" opacity="0.42"/>
+      <path d="M800 1000 h220" stroke-width="3" opacity="0.32"/>
+      <path d="M710 1058 h380" stroke-width="4" opacity="0.30"/>
+      <path d="M780 1124 h270" stroke-width="4" opacity="0.22"/>
+      <path d="M660 1196 h470" stroke-width="5" opacity="0.18"/>
+      <path d="M740 1288 h360" stroke-width="5" opacity="0.13"/>
+    </g>
+    <g stroke="#ffb887" fill="none" opacity="0.05">
+      <path d="M0 1024 H2560" stroke-width="2"/>
+      <path d="M0 1110 H2560" stroke-width="3"/>
+      <path d="M0 1216 H2560" stroke-width="3"/>
+      <path d="M0 1340 H2560" stroke-width="4"/>
+    </g>
+  </g>
+  <rect x="0" y="898" width="2560" height="3" fill="#ffd08a" opacity="0.5"/>
+
+  <!-- shoreline, rooted below the frame -->
+  <path d="M0 1440 L0 1386 C 420 1362, 900 1400, 1400 1382 C 1880 1364, 2260 1398, 2560 1378 L2560 1440 Z"
+        fill="#150a1c"/>
+
+  <!-- palms, trunks running off the bottom edge -->
+  <g>
+    <use href="#palm" transform="translate(2210,1500) scale(1.62)"/>
+    <use href="#palm" transform="translate(2400,1592) scale(1.06)"/>
+    <use href="#palm" transform="translate(300,1520)  scale(-1.42,1.42)"/>
+  </g>
+</svg>
